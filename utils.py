@@ -1,3 +1,5 @@
+import random
+
 def add(a, b):
     """
     Returns the sum of a and b.
@@ -61,5 +63,12 @@ def fibonacci(n):
     if n <= 1:
         return n
     return fibonacci(n-1) + fibonacci(n-2)
+
+def random_int(a, b):
+    return random.randint(a, b)
+
+def random_choice(lst):
+    return random.choice(lst)
+
 
 
