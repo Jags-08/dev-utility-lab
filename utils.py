@@ -54,3 +54,12 @@ def is_prime(n):
             return False
     return True
 
+def fibonacci(n):
+    """
+    Returns the n-th Fibonacci number.
+    """
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+
