@@ -41,18 +41,16 @@ def is_even(n):
 def is_prime(n):
     """
     Checks if a number is prime.
-    Returns True if prime, False otherwise.
+    
+    A prime number is only divisible by 1 and itself.
+    The loop runs from 2 up to the square root of n since any factor 
+    greater than the square root must pair with a factor smaller than it.
     """
-    if n <= 1:
+    if n < 2:
         return False
-    if n <= 3:
-        return True
-    if n % 2 == 0 or n % 3 == 0:
-        return False
-    i = 5
-    while i * i <= n:
-        if n % i == 0 or n % (i + 2) == 0:
+    # Check divisibility up to the square root of the number
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
             return False
-        i += 6
     return True
 
