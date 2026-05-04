@@ -84,6 +84,12 @@ def gcd(a, b):
         a, b = b, a % b
     return a
 
+def lcm(a, b):
+    """
+    Computes the Least Common Multiple (LCM) of a and b.
+    """
+    return abs(a * b) // gcd(a, b)
+
 
 
 
