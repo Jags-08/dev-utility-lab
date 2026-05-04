@@ -76,5 +76,14 @@ def random_choice(lst):
     """
     return random.choice(lst)
 
+def gcd(a, b):
+    """
+    Computes the greatest common divisor of a and b using the Euclidean algorithm.
+    """
+    while b:
+        a, b = b, a % b
+    return a
+
+
 
 
