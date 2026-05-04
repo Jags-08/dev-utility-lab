@@ -76,10 +76,17 @@ def random_choice(lst):
     """
     return random.choice(lst)
 
+def gcd(a, b):
+    """
+    Computes the greatest common divisor of a and b using the Euclidean algorithm.
+    """
+    while b:
+        a, b = b, a % b
+    return a
+
 def lcm(a, b):
     """
     Computes the Least Common Multiple (LCM) of a and b.
-    Requires gcd(a, b) to be available.
     """
     return abs(a * b) // gcd(a, b)
 
