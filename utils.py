@@ -97,6 +97,14 @@ def shuffle_list(lst):
     random.shuffle(lst)
     return lst
 
+def read_file(filepath):
+    """
+    Reads the entire content of a file given its filepath.
+    Returns the content as a string.
+    """
+    with open(filepath, 'r') as file:
+        return file.read()
+
 
 
 
