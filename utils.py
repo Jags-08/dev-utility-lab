@@ -90,6 +90,14 @@ def lcm(a, b):
     """
     return abs(a * b) // gcd(a, b)
 
+def read_file(filepath):
+    """
+    Reads the entire content of a file given its filepath.
+    Returns the content as a string.
+    """
+    with open(filepath, 'r') as file:
+        return file.read()
+
 
 
 
