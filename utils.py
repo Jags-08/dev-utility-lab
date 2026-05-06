@@ -90,6 +90,13 @@ def lcm(a, b):
     """
     return abs(a * b) // gcd(a, b)
 
+def shuffle_list(lst):
+    """
+    Shuffles a list in place and returns it.
+    """
+    random.shuffle(lst)
+    return lst
+
 def read_file(filepath):
     """
     Reads the entire content of a file given its filepath.
