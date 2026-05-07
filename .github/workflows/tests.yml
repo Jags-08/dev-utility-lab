@@ -1,0 +1,37 @@
+name: Python Tests
+
+# Run this workflow every time someone pushes to the repository
+# or opens a pull request targeting the 'main' branch
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    # Set the operating system the workflow will run on
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout the repository code onto the runner
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    # 2. Setup the required Python environment
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+        cache: "pip"
+
+    # 3. Install the dependencies listed in our requirements file
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    # 4. Run the actual automated tests using pytest
+    - name: Run tests with pytest
+      run: |
+        pytest tests/
