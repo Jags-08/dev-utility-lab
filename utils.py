@@ -1,4 +1,5 @@
 import random
+import json
 
 def add(a, b):
     """
@@ -104,6 +105,16 @@ def read_file(filepath):
     """
     with open(filepath, 'r') as file:
         return file.read()
+
+def read_json(filepath):
+    """
+    Reads and parses a JSON file.
+    
+    Example:
+        data = read_json('data.json')
+    """
+    with open(filepath, 'r') as file:
+        return json.load(file)
 
 
 
