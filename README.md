@@ -36,3 +36,15 @@ print(f"Generated secure password: {pwd}")
 2. Import `utils.py` into your Python projects.
 3. Start using the utility functions!
 
+## Testing and CI
+
+This repository uses **pytest** for automated testing and **GitHub Actions** for Continuous Integration (CI). 
+
+Every time code is pushed or a Pull Request is opened against the `main` branch, GitHub Actions will automatically provision an Ubuntu server, install the dependencies, and run the entire test suite. This ensures that we maintain a highly reliable and heavily tested utility library without any manual validation required on PRs!
+
+To run tests locally:
+```bash
+pip install -r requirements.txt
+pytest tests/
+```
+
