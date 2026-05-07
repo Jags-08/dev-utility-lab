@@ -12,10 +12,12 @@ A growing collection of clean, reusable Python utility functions for everyday de
 
 ## Example Usage
 
-Here are examples of how to use our utilities:
+Here are examples of how to use our utilities with the new modular package layout:
 
 ```python
-from utils import add, is_prime, read_json, generate_password
+from dev_utils.math_ops import add, is_prime
+from dev_utils.data_ops import read_json
+from dev_utils.random_ops import generate_password
 
 # Math operations
 print(add(5, 3))           # Output: 8
@@ -32,9 +34,25 @@ print(f"Generated secure password: {pwd}")
 
 ## Getting Started
 
+Since `dev-utility-lab` is structured as a proper Python package, you can install it directly into your environment using `pip`!
+
 1. Clone the repository to your local machine.
-2. Import `utils.py` into your Python projects.
-3. Start using the utility functions!
+2. Install the package in editable mode:
+   ```bash
+   pip install -e .
+   ```
+3. Import from the `dev_utils` package into your Python projects.
+
+## Project Structure
+
+```
+dev_utils/
+├── __init__.py     # Exposes all utilities
+├── math_ops.py     # add, factorial, is_prime, fibonacci, gcd, lcm, etc.
+├── string_ops.py   # reverse_string, is_palindrome
+├── random_ops.py   # random_int, random_choice, shuffle_list, generate_password
+└── data_ops.py     # read_file, read_json
+```
 
 ## Testing and CI
 
@@ -44,7 +62,8 @@ Every time code is pushed or a Pull Request is opened against the `main` branch,
 
 To run tests locally:
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
+pip install -e .
 pytest tests/
 ```
 
