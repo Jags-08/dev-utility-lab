@@ -1,5 +1,6 @@
 import random
 import string
+import json
 
 def add(a, b):
     """
@@ -115,6 +116,16 @@ def generate_password(length=12):
     """
     chars = string.ascii_letters + string.digits
     return ''.join(random.choice(chars) for _ in range(length))
+
+def read_json(filepath):
+    """
+    Reads and parses a JSON file.
+    
+    Example:
+        data = read_json('data.json')
+    """
+    with open(filepath, 'r') as file:
+        return json.load(file)
 
 
 
