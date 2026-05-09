@@ -1,5 +1,10 @@
 # dev-utility-lab
 
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![CI Status](https://github.com/Jags-08/dev-utility-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/Jags-08/dev-utility-lab/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Tested with Pytest](https://img.shields.io/badge/tested_with-pytest-blue.svg)](https://docs.pytest.org)
+
 A growing collection of clean, reusable Python utility functions for everyday development tasks.
 
 ## Features
@@ -61,7 +66,18 @@ dev-utils reverse-string hello
 # Output: olleh
 
 # Generate a random 16-character password
-dev-utils generate-password --length 16
+devRelease Notes & Plans
+
+**Current Version:** v0.1.0  
+See our [CHANGELOG.md](CHANGELOG.md) for a detailed history of updates.
+
+**Future Planned Features**
+Check our [ROADMAP.md](ROADMAP.md) to see what we're building next! Priorities include:
+* Persistent configuration files for the CLI
+* File recursion tooling and improved standard logging wrappers
+* Pre-compiled standalone binaries!
+
+## -utils generate-password --length 16
 ```
 
 Use `dev-utils --help` to see all available commands!
@@ -89,4 +105,22 @@ pip install -r requirements-dev.txt
 pip install -e .
 pytest tests/
 ```
+
+## Contributing Workflow
+
+Here's how we build features securely together:
+
+```mermaid
+graph LR
+    A[Fork Repo] --> B[Clone Locally]
+    B --> C[Branch feature/*]
+    C --> D[Write Code & Tests]
+    D --> E[Run Pytest]
+    E -->|Passes| F[Push to Fork]
+    E -->|Fails| D
+    F --> G[Open Pull Request]
+    G --> H[Maintainer Merge to main]
+```
+
+Read the full [CONTRIBUTING.md](CONTRIBUTING.md) for code of conduct and best practices.
 

@@ -7,7 +7,11 @@ from .random_ops import generate_password, random_int, shuffle_list
 from .data_ops import read_json, read_file
 
 def main(args=None):
-    parser = argparse.ArgumentParser(description="dev-utility-lab CLI Toolkit")
+    parser = argparse.ArgumentParser(
+        description="dev-utility-lab CLI Toolkit\nA professional Swiss-army knife for terminal environments.",
+        epilog="Examples:\n  dev-utils add 5 7\n  dev-utils factorial 5\n  dev-utils reverse-string hello\n",
+        formatter_class=argparse.RawTextHelpFormatter
+    )
     subparsers = parser.add_subparsers(title="Commands", dest="command")
     subparsers.required = True
 
