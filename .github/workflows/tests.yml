@@ -32,7 +32,16 @@ jobs:
         pip install -r requirements-dev.txt
         pip install -e .
 
-    # 4. Run the actual automated tests using pytest
-    - name: Run tests with pytest
+    # 4. Run linting and type checks
+    - name: Run Ruff Linting
+      run: |
+        ruff check dev_utils/ tests/
+
+    - name: Run MyPy Type Checking
+      run: |
+        mypy dev_utils/
+
+    # 5. Run the actual automated tests using pytest
+    - name: Run tests and coverage with pytest
       run: |
         pytest tests/

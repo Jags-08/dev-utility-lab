@@ -1,10 +1,12 @@
-def add(a, b):
+from typing import Union
+
+def add(a: Union[int, float], b: Union[int, float]) -> Union[int, float]:
     """
     Returns the sum of a and b.
     """
     return a + b
 
-def factorial(n):
+def factorial(n: int) -> int:
     """
     Returns the factorial of a non-negative integer n.
     """
@@ -17,13 +19,13 @@ def factorial(n):
         result *= i
     return result
 
-def is_even(n):
+def is_even(n: int) -> bool:
     """
     Returns True if n is an even number, False otherwise.
     """
     return n % 2 == 0
 
-def is_prime(n):
+def is_prime(n: int) -> bool:
     """
     Checks if a number is prime.
     
@@ -39,7 +41,7 @@ def is_prime(n):
             return False
     return True
 
-def fibonacci(n):
+def fibonacci(n: int) -> int:
     """
     Returns the n-th Fibonacci number.
     """
@@ -47,16 +49,18 @@ def fibonacci(n):
         return n
     return fibonacci(n-1) + fibonacci(n-2)
 
-def gcd(a, b):
+def gcd(a: int, b: int) -> int:
     """
     Computes the greatest common divisor of a and b using the Euclidean algorithm.
     """
     while b:
         a, b = b, a % b
-    return a
+    return abs(a)
 
-def lcm(a, b):
+def lcm(a: int, b: int) -> int:
     """
     Computes the Least Common Multiple (LCM) of a and b.
     """
+    if a == 0 or b == 0:
+        return 0
     return abs(a * b) // gcd(a, b)

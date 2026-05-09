@@ -1,12 +1,13 @@
 import argparse
 import sys
 import json
+from typing import Optional, List
 from .math_ops import add, factorial, gcd, lcm, fibonacci, is_prime
 from .string_ops import reverse_string, is_palindrome
 from .random_ops import generate_password, random_int, shuffle_list
 from .data_ops import read_json, read_file
 
-def main(args=None):
+def main(args: Optional[List[str]] = None) -> None:
     parser = argparse.ArgumentParser(
         description="dev-utility-lab CLI Toolkit\nA professional Swiss-army knife for terminal environments.",
         epilog="Examples:\n  dev-utils add 5 7\n  dev-utils factorial 5\n  dev-utils reverse-string hello\n",

@@ -4,6 +4,9 @@
 [![CI Status](https://github.com/Jags-08/dev-utility-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/Jags-08/dev-utility-lab/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Tested with Pytest](https://img.shields.io/badge/tested_with-pytest-blue.svg)](https://docs.pytest.org)
+[![Coverage Status](https://coveralls.io/repos/github/Jags-08/dev-utility-lab/badge.svg?branch=main)](https://coveralls.io/github/Jags-08/dev-utility-lab?branch=main)
+[![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 A growing collection of clean, reusable Python utility functions for everyday development tasks.
 

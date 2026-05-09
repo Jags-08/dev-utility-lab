@@ -1,10 +1,10 @@
-def reverse_string(s):
+def reverse_string(s: str) -> str:
     """
     Returns the reverse of the input string s.
     """
     return s[::-1]
 
-def is_palindrome(s):
+def is_palindrome(s: str) -> bool:
     """
     Checks if the string s is a palindrome.
     Ignores spaces and case.
