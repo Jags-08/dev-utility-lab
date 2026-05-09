@@ -37,16 +37,30 @@ pwd = generate_password(16)
 print(f"Generated secure password: {pwd}")
 ```
 
-## Getting Started
+## Why This Project Exists
+
+Open source tooling is frequently cluttered and overly complex. `dev-utility-lab` was created to serve as a lightweight, clean, and easily auditable standard library of operations we perform every day across Python applications.
+
+## Getting Started / Quick Start
+
+Read our exhaustive [Getting Started Guide](docs/getting-started.md) to bootstrap your application immediately!
 
 Since `dev-utility-lab` is structured as a proper Python package, you can install it directly into your environment using `pip`!
 
-1. Clone the repository to your local machine.
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/Jags-08/dev-utility-lab.git
+   cd dev-utility-lab
+   ```
 2. Install the package in editable mode (this installs the CLI tool as well!):
    ```bash
    pip install -e .
    ```
 3. Import from the `dev_utils` package into your Python projects, or use the `dev-utils` CLI.
+
+## Screenshots & CLI Showcase
+
+Check out the [Detailed CLI Examples](docs/cli-examples.md) to see `dev-utils` perfectly interact with shell piping!
 
 ## Command-Line Interface (CLI)
 
@@ -82,7 +96,30 @@ Check our [ROADMAP.md](ROADMAP.md) to see what we're building next! Priorities i
 
 Use `dev-utils --help` to see all available commands!
 
-## Project Structure
+## Project Architecture Overview
+
+Below is the conceptual architecture of how packages interact within the source.
+
+```ascii
+                      +-------------------+
+                      |   CLI Entrypoint  |
+                      |  (dev_utils/cli)  |
+                      +---------+---------+
+                                |
+          +---------------------+---------------------+
+          |                     |                     |
+ +--------v--------+   +--------v--------+   +--------v--------+
+ |   math_ops.py   |   |   string_ops.py |   |  random_ops.py  |
+ | (Factorial, GCD)|   |  (Palindromes)  |   | (Password Gen)  |
+ +-----------------+   +-----------------+   +-----------------+
+          |                     |                     |
+          +---------------------+---------------------+
+                                |
+                      +---------v---------+
+                      |   Core Package    |
+                      |   (__init__.py)   |
+                      +-------------------+
+```
 
 ```
 dev_utils/
