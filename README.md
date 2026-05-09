@@ -37,11 +37,34 @@ print(f"Generated secure password: {pwd}")
 Since `dev-utility-lab` is structured as a proper Python package, you can install it directly into your environment using `pip`!
 
 1. Clone the repository to your local machine.
-2. Install the package in editable mode:
+2. Install the package in editable mode (this installs the CLI tool as well!):
    ```bash
    pip install -e .
    ```
-3. Import from the `dev_utils` package into your Python projects.
+3. Import from the `dev_utils` package into your Python projects, or use the `dev-utils` CLI.
+
+## Command-Line Interface (CLI)
+
+`dev-utility-lab` provides a built-in terminal app for executing operations directly from your shell.
+
+```bash
+# Add two numbers together
+dev-utils add 5 7
+# Output: 12
+
+# Calculate factorial
+dev-utils factorial 5
+# Output: 120
+
+# Reverse a string
+dev-utils reverse-string hello
+# Output: olleh
+
+# Generate a random 16-character password
+dev-utils generate-password --length 16
+```
+
+Use `dev-utils --help` to see all available commands!
 
 ## Project Structure
 

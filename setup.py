@@ -8,4 +8,9 @@ setup(
     packages=find_packages(include=["dev_utils", "dev_utils.*"]),
     install_requires=[],
     python_requires=">=3.8",
+    entry_points={
+        "console_scripts": [
+            "dev-utils=dev_utils.cli:main",
+        ],
+    },
 )
