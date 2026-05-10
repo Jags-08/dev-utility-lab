@@ -90,6 +90,17 @@ To run the unified dashboard platform:
 * **`/examples` - Terminal Simulator**: Discover programmatic operations replicated within a responsive UI terminal mock to quickly emulate bash environments.
 * **`/docs` - API Documentation**: Integration manuals showing strictly typed schema shapes to securely map into `/api/run-tool` operations independently from the frontend.
 
+## Docker & Production Deployment 🐳
+
+Deploy `dev-utility-lab` in a scaleable way natively utilizing [Docker Compose](docs/deployment.md) backed by a Gunicorn WSGI server. 
+
+```bash
+docker-compose up -d --build
+```
+This deploys the platform securely bound to `0.0.0.0:5000` with container health-checks and environment configurations populated from `.env`.
+
+*Read the [Production Architecture](docs/architecture.md) documentation to see how load balances across workers securely!*
+
 ## Command-Line Interface (CLI)
 
 `dev-utility-lab` provides a built-in terminal app for executing operations directly from your shell.

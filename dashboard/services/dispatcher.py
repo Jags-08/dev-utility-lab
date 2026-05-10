@@ -9,6 +9,7 @@ from dev_utils.string_ops import is_palindrome, reverse_string
 def count_words(text: str) -> int:
     return len(text.split())
 
+
 # Safe registry of allowed functions
 TOOL_REGISTRY = {
     "math/add": {"func": add, "args": ["a", "b"], "types": [float, float]},
@@ -21,8 +22,9 @@ TOOL_REGISTRY = {
     "string/palindrome": {"func": is_palindrome, "args": ["text"], "types": [str]},
     "string/word_count": {"func": count_words, "args": ["text"], "types": [str]},
     "random/generate_password": {"func": generate_password, "args": ["length"], "types": [int]},
-    "random/random_int": {"func": random_int, "args": ["min_val", "max_val"], "types": [int, int]}
+    "random/random_int": {"func": random_int, "args": ["min_val", "max_val"], "types": [int, int]},
 }
+
 
 def dispatch_tool(tool_id: str, payload: Dict[str, Any]) -> Dict[str, Any]:
     if tool_id not in TOOL_REGISTRY:
@@ -35,7 +37,7 @@ def dispatch_tool(tool_id: str, payload: Dict[str, Any]) -> Dict[str, Any]:
 
     # Extract and cast arguments safely
     safe_args = []
-    for name, expected_type in zip(arg_names, arg_types): # type: ignore
+    for name, expected_type in zip(arg_names, arg_types):  # type: ignore
         val = payload.get(name)
         if val is None:
             return {"success": False, "error": f"Missing argument: {name}"}
@@ -59,15 +61,8 @@ def dispatch_tool(tool_id: str, payload: Dict[str, Any]) -> Dict[str, Any]:
     start_time = time.time()
     try:
         # We need to ignore type issues here since we are unpacking dynamic args
-        result = func(*safe_args) # type: ignore
+        result = func(*safe_args)  # type: ignore
         exec_time = time.time() - start_time
-        return {
-            "success": True,
-            "result": result,
-            "execution_time_ms": round(exec_time * 1000, 4)
-        }
+        return {"success": True, "result": result, "execution_time_ms": round(exec_time * 1000, 4)}
     except Exception as e:
-        return {
-            "success": False,
-            "error": str(e)
-        }
+        return {"success": False, "error": str(e)}
