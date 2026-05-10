@@ -1,22 +1,37 @@
 {% extends "base.html" %}
+{% block title %}Project Overview & Analytics{% endblock %}
+
 {% block content %}
-<div class="hero">
-    <h1>Project Overview</h1>
-    <p>A lightweight developer dashboard showcasing the dev-utility-lab capabilities.</p>
-</div>
+<p class="subtitle">Welcome to the Dev Utility Lab premium developer platform. Get insights into the ecosystem architecture.</p>
 
 <div class="card-grid">
-    <div class="card">
-        <h3>System Info</h3>
+    <div class="card glass-panel">
+        <h3>System Telemetry</h3>
         <ul>
-            <li><strong>Python Version:</strong> {{ sys_info.python_version }}</li>
-            <li><strong>Package Version:</strong> {{ sys_info.package_version }}</li>
-            <li><strong>Loaded Modules:</strong> {{ sys_info.loaded_modules }}</li>
+            <li><strong>Python Context:</strong> v{{ sys_info.python_version }}</li>
+            <li><strong>Package Version:</strong> v{{ sys_info.package_version }}</li>
+            <li><strong>Memory Modules:</strong> {{ sys_info.loaded_modules }}</li>
+            <li><strong>Active API Tools:</strong> {{ sys_info.total_tools }} capabilities mapped</li>
         </ul>
     </div>
-    <div class="card">
-        <h3>Quick Utilities</h3>
-        <p>Explore random password generation, math ops, and text manipulation directly from the CLI or API.</p>
+    <div class="card glass-panel">
+        <h3>Why this Project Exists</h3>
+        <p>This initiative bridges the gap between lightweight utility libraries and full-blown interactive platform workflows. All built with standard Python and robust typing.</p>
     </div>
+</div>
+
+<div class="card glass-panel" style="margin-top: 2rem;">
+    <h3>Architecture Relationship</h3>
+    <pre class="output-block" style="border:none; padding:0; background:transparent; font-size:14px; line-height: 1.4;">
+[ Browser Client UI ] -------- (Async Fetch / JSON) --------> [ Flask Blueprint APIs ]
+                                                                       |
+      +--------------- Security & Validation ---------------+----------+
+      |               (dashboard/services)                  |
+      v                                                     v
+[ Dispatcher Registry ]                              [ Benchmark Core ]
+      |                                                     |
+      +--------------> [ dev-utility-lab Core Lib ] <-------+
+                        (Math, String, Random...)
+    </pre>
 </div>
 {% endblock %}

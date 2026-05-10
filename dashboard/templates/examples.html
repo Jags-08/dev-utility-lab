@@ -1,16 +1,22 @@
 {% extends "base.html" %}
-{% block content %}
-<h2>CLI Examples</h2>
-<p>A showcase of the powerful CLI integration built into dev-utility-lab.</p>
+{% block title %}Terminal Emulator{% endblock %}
 
-<div class="terminal-mockup">
-    <div class="terminal-header">bash</div>
-    <div class="terminal-body">
-        <p><span class="prompt">$</span> dev-utils factorial 10</p>
-        <p class="output">3628800</p>
-        <br>
-        <p><span class="prompt">$</span> dev-utils config-demo</p>
-        <p class="output">Connecting to localhost...</p>
+{% block content %}
+<p class="subtitle">Simulate how operations flow when directly installed over the CLI natively, matching the capabilities seen in the Playground UI.</p>
+
+<div class="card glass-panel">
+    <div class="output-block">
+        <div style="color: #6a9955; margin-bottom:1rem;"># 1. Reverse a complex string input natively</div>
+        <div style="color: #e0e6ed;">$ dev-utils reverse-string "Interactive Labs"</div>
+        <div style="color: #569cd6; margin-bottom:1rem;">> sbaL evitcaretnI</div>
+
+        <div style="color: #6a9955; margin-bottom:1rem;"># 2. Check Prime status</div>
+        <div style="color: #e0e6ed;">$ dev-utils is-prime 997</div>
+        <div style="color: #569cd6; margin-bottom:1rem;">> True</div>
+
+        <div style="color: #6a9955; margin-bottom:1rem;"># 3. Test robust password security bounds</div>
+        <div style="color: #e0e6ed;">$ dev-utils generate-password 24</div>
+        <div style="color: #569cd6;">> Xj9@Lm2#Kq8$vN4!bP7*wR1&</div>
     </div>
 </div>
 {% endblock %}

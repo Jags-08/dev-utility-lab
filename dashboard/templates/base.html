@@ -3,23 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Utility Lab - Dashboard</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dev Utility Lab - Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
-    <nav class="navbar">
-        <div class="logo">Dev Utility Lab 🚀</div>
-        <ul class="nav-links">
-            <li><a href="{{ url_for('index') }}">Overview</a></li>
-            <li><a href="{{ url_for('benchmarks') }}">Benchmarks</a></li>
-            <li><a href="{{ url_for('examples') }}">Examples</a></li>
-        </ul>
-    </nav>
-    <main class="container">
-        {% block content %}{% endblock %}
-    </main>
-    <footer>
-        <p>&copy; 2026 Dev Utility Lab Contributors</p>
-    </footer>
+<body class="dark-theme">
+    <div class="layout">
+        <aside class="sidebar glass-panel">
+            <div class="logo">
+                <span class="icon">🚀</span> Dev Utility Lab
+            </div>
+            <nav class="nav-links">
+                <a href="{{ url_for('pages.index') }}">Overview & Analytics</a>
+                <a href="{{ url_for('pages.playground') }}">Interactive Playground</a>
+                <a href="{{ url_for('pages.benchmarks') }}">Benchmarks</a>
+                <a href="{{ url_for('pages.examples') }}">Terminal Simulator</a>
+                <a href="{{ url_for('pages.docs') }}">API Documentation</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="topbar glass-panel">
+                <h1>{% block title %}Dashboard{% endblock %}</h1>
+            </header>
+            <div class="content-wrapper">
+                {% block content %}{% endblock %}
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>

@@ -65,11 +65,11 @@ Since `dev-utility-lab` is structured as a proper Python package, you can instal
 
 Check out the [Detailed CLI Examples](docs/cli-examples.md) to see `dev-utils` perfectly interact with shell piping!
 
-## Developer Dashboard UI 🌐
+## Premium Interactive Developer Playground 🌐
 
-`dev-utility-lab` includes a lightweight, clean, dark-mode inspired local web dashboard built with Flask. This dashboard showcases project metrics, CLI examples, live benchmarks, and system configurations.
+`dev-utility-lab` includes a premium, glassmorphism-inspired dark-mode local web dashboard built with Flask. This dashboard showcases project metrics, CLI examples, live benchmarks, and an **Interactive Playground**. Users can experiment with utility functions running directly within the browser without spinning up a console!
 
-To run the dashboard:
+To run the unified dashboard platform:
 
 1. Install the dashboard dependencies:
    ```bash
@@ -82,7 +82,13 @@ To run the dashboard:
    ```
 3. Open your browser and navigate to `http://127.0.0.1:5000`.
 
-*Features include:* Live operation benchmarks (`/benchmarks`), system module visualization, and fully responsive layouts mapping directly directly to `benchmark_core.py`.
+### Key Pages:
+
+* **`/` - Overview & Analytics**: Live system telemetry charting package metrics, load modules, and architectural layouts mapping requests to the dispatcher.
+* **`/playground` - Interactive Playground**: Safely invoke backend tools utilizing an XHR/Fetch API mapping pipeline securely sandboxing your requests.
+* **`/benchmarks` - Execution Benchmarks**: Track real-time telemetry from core computation modules formatted into responsive tables.
+* **`/examples` - Terminal Simulator**: Discover programmatic operations replicated within a responsive UI terminal mock to quickly emulate bash environments.
+* **`/docs` - API Documentation**: Integration manuals showing strictly typed schema shapes to securely map into `/api/run-tool` operations independently from the frontend.
 
 ## Command-Line Interface (CLI)
 

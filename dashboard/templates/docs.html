@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}API Documentation{% endblock %}
+
+{% block content %}
+<p class="subtitle">Reference documentation for integrating the dev-utility-lab securely directly through API calls without opening the browser sandbox UI.</p>
+
+<div class="card glass-panel">
+    <h3>Endpoint: <code>POST /api/run-tool</code></h3>
+    <p style="color: var(--text-muted); margin-bottom: 2rem;">Securely executes functions mapped inside the internal Python utility library and returns structured computational responses.</p>
+    
+    <h4>Request Format</h4>
+    <pre class="output-block" style="background: rgba(0,0,0,0.3); border: 1px solid #333;">
+{
+    "tool_id": "math/gcd",
+    "payload": {
+        "a": 48,
+        "b": 18
+    }
+}</pre>
+
+    <h4 style="margin-top: 2rem;">Response Format</h4>
+    <pre class="output-block" style="background: rgba(0,0,0,0.3); border: 1px solid #333; color: #3fb950;">
+{
+    "success": true,
+    "result": 6,
+    "execution_time_ms": 0.0084
+}</pre>
+
+    <h4 style="margin-top: 2rem; color: var(--error)">Error Response</h4>
+    <pre class="output-block" style="background: rgba(0,0,0,0.3); border: 1px solid #333; color: var(--error);">
+{
+    "success": false,
+    "error": "Invalid type for a. Expected int."
+}</pre>
+</div>
+{% endblock %}

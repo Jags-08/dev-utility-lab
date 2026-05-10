@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Interactive Playground{% endblock %}
+
+{% block content %}
+<p class="subtitle">Execute utilities live in the browser via secure API integration. Select a tool and enter parameters.</p>
+
+<div class="playground-grid">
+    <!-- Configuration Panel -->
+    <div class="card glass-panel config-panel">
+        <h3>1. Select Tool</h3>
+        <select id="tool-selector" class="glass-input">
+            <option value="" disabled selected>-- Choose a Tool --</option>
+            <optgroup label="Math Tools">
+                <option value="math/add">Add Numbers</option>
+                <option value="math/factorial">Factorial</option>
+                <option value="math/is_prime">Prime Checker</option>
+                <option value="math/fibonacci">Fibonacci Sequence</option>
+                <option value="math/gcd">Greatest Common Divisor</option>
+                <option value="math/lcm">Least Common Multiple</option>
+            </optgroup>
+            <optgroup label="String Tools">
+                <option value="string/reverse">Reverse String</option>
+                <option value="string/palindrome">Palindrome Checker</option>
+                <option value="string/word_count">Word Count</option>
+            </optgroup>
+            <optgroup label="Random Tools">
+                <option value="random/generate_password">Secure Password Gen</option>
+                <option value="random/random_int">Random Integer</option>
+            </optgroup>
+        </select>
+
+        <div id="dynamic-form" class="dynamic-form hidden">
+            <h3>2. Configure Parameters</h3>
+            <!-- Injected by JS -->
+        </div>
+
+        <button id="run-btn" class="glass-btn primary hidden">Execute Call</button>
+    </div>
+
+    <!-- Output Panel -->
+    <div class="card glass-panel output-panel">
+        <div class="output-header">
+            <h3>Execution Result</h3>
+            <button id="copy-btn" class="glass-btn sm outline hidden">Copy</button>
+        </div>
+        
+        <div id="loading-spinner" class="spinner hidden"></div>
+        
+        <pre id="output-block" class="output-block glass-input">Select a tool and click Execute to see output here.</pre>
+        
+        <div class="metrics-bar hidden" id="metrics-bar">
+            ⏱️ Time: <span id="exec-time">0.00</span>ms &nbsp;|&nbsp; 
+            🚦 Status: <span id="exec-status"></span>
+        </div>
+    </div>
+</div>
+{% endblock %}
