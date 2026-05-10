@@ -99,3 +99,34 @@ def list_tools() -> Response:
             }
         )
     return jsonify({"tools": tools_info})
+
+from dashboard.services.assistant import suggest_utilities, contextual_help
+from dashboard.services.workflows import WorkflowEngine
+
+@api_bp.route("/assistant/suggest", methods=["GET"])
+def suggest() -> Response:
+    query = request.args.get("q", "")
+    return jsonify({"suggestions": suggest_utilities(query)})
+
+@api_bp.route("/workflows", methods=["POST"])
+def run_workflow() -> tuple[Response, int]:
+    data = request.get_json()
+    if not data or "steps" not in data:
+        return jsonify({"success": False, "error": "Provide steps array."}), 400
+    
+    engine = WorkflowEngine()
+    result = engine.execute_pipeline(data["steps"])
+    if result.get("success"):
+        return jsonify(result), 200
+    return jsonify(result), 400
+
+@api_bp.route("/analytics")
+def analytics() -> Response:
+    return jsonify({
+        "telemetry": telemetry_stats,
+        "cache_info": {
+            "hits": cached_dispatch.cache_info().hits,
+            "misses": cached_dispatch.cache_info().misses,
+            "size": cached_dispatch.cache_info().currsize
+        }
+    })
