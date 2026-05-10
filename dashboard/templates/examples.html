@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>CLI Examples</h2>
+<p>A showcase of the powerful CLI integration built into dev-utility-lab.</p>
+
+<div class="terminal-mockup">
+    <div class="terminal-header">bash</div>
+    <div class="terminal-body">
+        <p><span class="prompt">$</span> dev-utils factorial 10</p>
+        <p class="output">3628800</p>
+        <br>
+        <p><span class="prompt">$</span> dev-utils config-demo</p>
+        <p class="output">Connecting to localhost...</p>
+    </div>
+</div>
+{% endblock %}

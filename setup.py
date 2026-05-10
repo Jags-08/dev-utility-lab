@@ -7,6 +7,9 @@ setup(
     author="dev-utility-lab Contributors",
     packages=find_packages(include=["dev_utils", "dev_utils.*"]),
     install_requires=[],
+    extras_require={
+        "dashboard": ["flask>=2.0.0", "werkzeug>=2.0.0"],
+    },
     python_requires=">=3.8",
     classifiers=[
         "Development Status :: 4 - Beta",

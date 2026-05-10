@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero">
+    <h1>Project Overview</h1>
+    <p>A lightweight developer dashboard showcasing the dev-utility-lab capabilities.</p>
+</div>
+
+<div class="card-grid">
+    <div class="card">
+        <h3>System Info</h3>
+        <ul>
+            <li><strong>Python Version:</strong> {{ sys_info.python_version }}</li>
+            <li><strong>Package Version:</strong> {{ sys_info.package_version }}</li>
+            <li><strong>Loaded Modules:</strong> {{ sys_info.loaded_modules }}</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h3>Quick Utilities</h3>
+        <p>Explore random password generation, math ops, and text manipulation directly from the CLI or API.</p>
+    </div>
+</div>
+{% endblock %}

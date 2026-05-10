@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Benchmark Results</h2>
+<p>Live execution timing for core operations across the platform.</p>
+
+<table class="benchmark-table">
+    <thead>
+        <tr>
+            <th>Operation</th>
+            <th>Execution Time (s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for name, time_s in results.items() %}
+        <tr>
+            <td>{{ name.replace('_', ' ').title() }}</td>
+            <td><span class="badge">{{ time_s }}</span></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

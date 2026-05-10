@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Utility Lab - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Dev Utility Lab 🚀</div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Overview</a></li>
+            <li><a href="{{ url_for('benchmarks') }}">Benchmarks</a></li>
+            <li><a href="{{ url_for('examples') }}">Examples</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2026 Dev Utility Lab Contributors</p>
+    </footer>
+</body>
+</html>

@@ -65,6 +65,25 @@ Since `dev-utility-lab` is structured as a proper Python package, you can instal
 
 Check out the [Detailed CLI Examples](docs/cli-examples.md) to see `dev-utils` perfectly interact with shell piping!
 
+## Developer Dashboard UI 🌐
+
+`dev-utility-lab` includes a lightweight, clean, dark-mode inspired local web dashboard built with Flask. This dashboard showcases project metrics, CLI examples, live benchmarks, and system configurations.
+
+To run the dashboard:
+
+1. Install the dashboard dependencies:
+   ```bash
+   pip install -e ".[dashboard]"
+   ```
+2. Start the local server:
+   ```bash
+   cd dashboard
+   flask --app app run
+   ```
+3. Open your browser and navigate to `http://127.0.0.1:5000`.
+
+*Features include:* Live operation benchmarks (`/benchmarks`), system module visualization, and fully responsive layouts mapping directly directly to `benchmark_core.py`.
+
 ## Command-Line Interface (CLI)
 
 `dev-utility-lab` provides a built-in terminal app for executing operations directly from your shell.
