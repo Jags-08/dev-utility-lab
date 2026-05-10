@@ -1,0 +1,29 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements-dev.txt
+        pip install -e .
+    - name: Run Tests
+      run: pytest tests/
+    - name: Run Lint
+      run: ruff check dev_utils/
+    - name: Run MyPy
+      run: mypy dev_utils/
+    - name: Build package
+      run: python setup.py sdist bdist_wheel
