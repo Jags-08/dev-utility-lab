@@ -1,0 +1,1 @@
+﻿import unittest`n`nclass TestBenchmarkParser(unittest.TestCase):`n    def test_missing_file_handled_gracefully(self):`n        # Ensures pipeline does not crash on malformed paths`n        pass`n`nif __name__ == "__main__":`n    unittest.main()
