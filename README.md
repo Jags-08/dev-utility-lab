@@ -200,3 +200,6 @@ graph LR
 
 Read the full [CONTRIBUTING.md](CONTRIBUTING.md) for code of conduct and best practices.
 
+
+## Ecosystem Integration
+This lab consumes strict JSON schema payloads from the java-benchmark-suite for standardized cross-language telemetry.
