@@ -1,0 +1,1 @@
+﻿import os`n`ndef build_index():`n    os.makedirs("dashboard/public", exist_ok=True)`n    with open("dashboard/public/index.html", "w") as f:`n        f.write("<html><body>Generated.</body></html>")`n    print("Generating static HTML index...")`n`nif __name__ == "__main__":`n    build_index()
