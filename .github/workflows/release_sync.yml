@@ -1,0 +1,1 @@
+﻿name: Release Convergence`non: repository_dispatch`njobs:`n  map_schemas:`n    runs-on: ubuntu-latest`n    steps:`n      - run: echo "Converging schemas..."
