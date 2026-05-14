@@ -203,3 +203,5 @@ Read the full [CONTRIBUTING.md](CONTRIBUTING.md) for code of conduct and best pr
 
 ## Ecosystem Integration
 This lab consumes strict JSON schema payloads from the java-benchmark-suite for standardized cross-language telemetry.
+
+<!-- Maintenance: Stabilized V1 Pipeline -->
