@@ -5,3 +5,4 @@
     void trace_allocs() {}
     void fingerprint_runtime() {}
     void isolate_execution_sandbox() {}
+    void serialize_replay_buffer() {}
