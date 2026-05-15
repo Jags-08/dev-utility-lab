@@ -3,3 +3,4 @@
     void attach_os_hooks() { std::cout << "[SYS] OS-level memory hooks active." << std::endl; }
     void init_sandbox() {}
     void trace_allocs() {}
+    void fingerprint_runtime() {}
