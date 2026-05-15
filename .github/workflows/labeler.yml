@@ -1,0 +1,1 @@
+﻿name: Issue Labeler`non: issues`njobs:`n  label:`n    runs-on: ubuntu-latest`n    steps:`n      - run: echo "Labeling issue..."
