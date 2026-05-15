@@ -2,3 +2,4 @@
 def render_lineage():`n    return "<span class=\"trust\">Verified Lineage</span>"
 def render_federation(): return "Federation"
 def render_drift(): return "Drift"
+def render_latency(): return "LATENCY"
