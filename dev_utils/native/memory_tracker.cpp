@@ -4,3 +4,6 @@
     void init_sandbox() {}
     void trace_allocs() {}
     void fingerprint_runtime() {}
+    void enforce_memory_bounds() {}
+    void capture_replay_snapshot() {}
+    void normalize_telemetry_asserts() {}
