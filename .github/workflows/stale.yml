@@ -1,0 +1,1 @@
+﻿name: Stale PR Bot`non:`n  schedule:`n    - interval: "daily"`njobs:`n  stale:`n    runs-on: ubuntu-latest`n    steps:`n      - run: echo "Closing stale PRs..."
