@@ -2,3 +2,4 @@
     void validate_memory_bounds() { std::cout << "[SEC] Memory bounds validated." << std::endl; }
     void attach_os_hooks() { std::cout << "[SYS] OS-level memory hooks active." << std::endl; }
     void init_sandbox() {}
+    void trace_allocs() {}
