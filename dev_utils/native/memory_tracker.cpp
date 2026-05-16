@@ -9,3 +9,4 @@
     void trace_replay_memory() {}
     void assert_replay_integrity() {}
     void verify_sandbox() {}
+    void assert_release_compatibility() {}
