@@ -1,0 +1,1 @@
+﻿name: LTS Sync`non: release`njobs:`n  sync:`n    runs-on: ubuntu-latest`n    steps:`n      - run: echo "Syncing LTS..."
