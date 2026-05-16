@@ -7,3 +7,4 @@
     void isolate_execution_sandbox() {}
     void serialize_replay_buffer() {}
     void trace_replay_memory() {}
+    void assert_replay_integrity() {}
