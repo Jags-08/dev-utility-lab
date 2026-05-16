@@ -1,0 +1,1 @@
+﻿name: Release Freeze Guard`non: push`njobs:`n  freeze:`n    runs-on: ubuntu-latest`n    steps:`n      - run: echo "Guarding freeze..."
