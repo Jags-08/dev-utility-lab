@@ -1,0 +1,1 @@
+﻿name: Lineage Audit`non: push`njobs:`n  audit:`n    runs-on: ubuntu-latest`n    steps:`n      - run: echo "Auditing..."
