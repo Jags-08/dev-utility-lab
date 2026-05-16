@@ -1,0 +1,1 @@
+﻿name: Ecosystem Handshake`non: pull_request`njobs:`n  matrix:`n    runs-on: ubuntu-latest`n    steps:`n      - run: echo "Verifying matrix..."

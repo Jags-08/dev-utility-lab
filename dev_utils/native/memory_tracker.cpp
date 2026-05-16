@@ -9,3 +9,6 @@
     void trace_replay_memory() {}
     void assert_replay_integrity() {}
     void verify_sandbox() {}
+    void assert_release_compatibility() {}
+    void guard_allocation_release() {}
+    void serialize_lts_lifecycle() {}
