@@ -1,0 +1,1 @@
+﻿name: Replay Test`non: pull_request`njobs:`n  test:`n    runs-on: ubuntu-latest`n    steps:`n      - run: echo "Replaying..."
