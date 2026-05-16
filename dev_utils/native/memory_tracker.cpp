@@ -11,3 +11,4 @@
     void verify_sandbox() {}
     void assert_release_compatibility() {}
     void guard_allocation_release() {}
+    void serialize_lts_lifecycle() {}
