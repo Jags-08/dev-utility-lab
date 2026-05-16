@@ -10,3 +10,4 @@
     void assert_replay_integrity() {}
     void verify_sandbox() {}
     void assert_release_compatibility() {}
+    void guard_allocation_release() {}
