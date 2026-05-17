@@ -1,0 +1,2 @@
+class ReconciliationValidator:
+    pass
