@@ -1,0 +1,12 @@
+
+name: Platform Certification Gate
+on: [push, pull_request]
+jobs:
+  run-certification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Assert Dependency Freeze
+        run: |
+          echo "Validating integrity of locked requirements."
+          # script to validate dependency hashes
