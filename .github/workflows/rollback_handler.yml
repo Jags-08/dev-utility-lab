@@ -1,0 +1,7 @@
+name: Release Rollback
+on: [workflow_dispatch]
+jobs:
+  rollback:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Initiating protected rollback."
