@@ -1,0 +1,2 @@
+class DependencyFaultInjector:
+    pass
