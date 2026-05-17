@@ -1,0 +1,2 @@
+class StateSnapshotManager:
+    pass
