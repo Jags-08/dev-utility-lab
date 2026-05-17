@@ -1,0 +1,7 @@
+name: Replay Integrity
+on: [push]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Validating..."
