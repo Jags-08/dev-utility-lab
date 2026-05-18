@@ -1,1 +1,11 @@
-﻿name: "Feature Request"\nabout: Propose a new feature for the utility lab\ntitle: "[FEATURE] "\nlabels: enhancement\nassignees: ""\n\n**Is your feature request related to a problem?**\nA clear and concise description of what the problem is.\n\n**Describe the solution you'd like**\nA clear and concise description of what you want to happen.
+---
+name: Feature request
+about: Suggest an idea for this project
+title: '[FEAT] '
+labels: enhancement
+assignees: ''
+
+---
+**Is your feature request related to a problem?**
+**Describe the solution you'd like**
+**Architectural Scope (Single Region / Multi-Region)**
