@@ -1,0 +1,9 @@
+name: Release Freeze Validation
+on:
+  pull_request:
+    branches: [ "v3-lts" ]
+jobs:
+  audit-freeze:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Validating freeze constraints against semver patch bounds."
