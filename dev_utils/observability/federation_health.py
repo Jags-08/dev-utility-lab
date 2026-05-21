@@ -1,2 +1,2 @@
-def aggregate_federation_health(shard_scores):
+def aggregate_federation_health_7619(shard_scores):
     return 100
