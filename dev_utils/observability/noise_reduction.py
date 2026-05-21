@@ -1,2 +1,2 @@
-def apply_noise_reduction(log_stream):
+def apply_noise_reduction_7619(log_stream):
     return log_stream
