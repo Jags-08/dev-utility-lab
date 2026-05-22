@@ -2,4 +2,4 @@
 
 Clean up high-level architecture overview.
 
-Audit Ref: `REV-89163`
+Audit Ref: `REV-72001`
