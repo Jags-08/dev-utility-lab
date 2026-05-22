@@ -2,4 +2,4 @@
 
 Publish telemetry quick-reference guides.
 
-Audit Ref: `REV-30987`
+Audit Ref: `REV-21696`
