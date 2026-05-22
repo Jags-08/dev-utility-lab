@@ -2,4 +2,4 @@
 
 Refine dependency review escalation paths.
 
-Audit Ref: `REV-54519`
+Audit Ref: `REV-71046`
