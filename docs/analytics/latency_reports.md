@@ -1,3 +1,3 @@
 # docs(observability): summarize replay latency reports
 
-Data mapping ID: 6210
+Data mapping ID: 7579
