@@ -2,4 +2,4 @@
 
 Aggregate operational analytics snapshots.
 
-Audit Ref: `REV-37364`
+Audit Ref: `REV-47030`
