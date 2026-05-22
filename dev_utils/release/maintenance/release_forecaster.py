@@ -1,2 +1,2 @@
-def process_release_forecaster_246811():
-    return '246811'
+def process_release_forecaster_821491():
+    return '821491'
