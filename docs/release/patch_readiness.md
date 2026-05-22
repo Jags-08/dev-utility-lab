@@ -2,4 +2,4 @@
 
 Summarize patch-readiness operational visibility.
 
-Audit Ref: `REV-73825`
+Audit Ref: `REV-43652`
