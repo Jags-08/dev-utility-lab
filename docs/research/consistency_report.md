@@ -2,4 +2,4 @@
 
 Clarify replay consistency definitions.
 
-Audit Ref: `REV-10529`
+Audit Ref: `REV-88756`
