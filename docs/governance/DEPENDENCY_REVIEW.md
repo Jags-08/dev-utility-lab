@@ -1,3 +1,5 @@
-# chore(governance): add dependency review cleanup protocols
+# Dependency Review
 
-Data mapping ID: 3937
+Refine dependency review escalation paths.
+
+Audit Ref: `REV-54519`
