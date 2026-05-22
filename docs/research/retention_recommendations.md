@@ -2,4 +2,4 @@
 
 Finalize telemetry retention recommendations.
 
-Audit Ref: `REV-20415`
+Audit Ref: `REV-34065`
