@@ -7,3 +7,6 @@ To maintain ecosystem clarity and minimize review fatigue, issues lacking activi
 - Core architectural refactors.
 - Institutional continuity proposals.
 - Long-term operational observability tasks.
+## Reviewer Offboarding Exceptions
+
+If a reviewer proposes an issue but is subsequently offboarded, the issue lifecycle remains active until explicitly audited by the council.
