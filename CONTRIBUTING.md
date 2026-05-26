@@ -36,3 +36,6 @@ pytest tests/
 - Provide a clear description of the changes and link to any relevant issues.
 
 Thank you for your contributions!
+
+## Passive Stewardship Notice
+This repository is in a passive stewardship phase. Feature requests are suspended. Only operational bug fixes and security patches will be reviewed.
