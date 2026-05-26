@@ -34,3 +34,6 @@ This architecture is strictly checked against fault-tolerance matrices. When pro
 
 
 
+
+### 📖 Institutional Definitions
+See the [Governance Glossary](GOVERNANCE_GLOSSARY.md) for terminology regarding our passive stewardship phase and operational continuity validators.
