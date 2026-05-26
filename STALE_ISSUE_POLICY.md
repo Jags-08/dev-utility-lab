@@ -9,4 +9,4 @@ To maintain ecosystem clarity and minimize review fatigue, issues lacking activi
 - Long-term operational observability tasks.
 ## Reviewer Offboarding Exceptions
 
-If a reviewer proposes an issue but is subsequently offboarded, the issue lifecycle remains active until explicitly audited by the council.
+If a reviewer proposes an issue but is subsequently offboarded, the issue lifecycle remains active until audited by the council, subject to a hard 180-day limit before automatic archival.
