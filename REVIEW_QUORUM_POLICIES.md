@@ -9,3 +9,5 @@ In the event of a 48-hour N-2 deadlock, the temporal reviewer escalation chain t
 ## Quorum Escalation Safety
 
 If the primary review council is unable to reach consensus within 7 days (extended absence default), the StewardshipLead assumes tie-breaking authority to prevent operational deadlock.
+## Multi-Stage Review Escalation
+If a PR fails the survivability validation stage, it immediately bounces back to the Governance tier before operations can review.
