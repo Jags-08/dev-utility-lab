@@ -6,4 +6,4 @@ Critical zero-day vulnerabilities (CVSS > 8.0) trigger immediate out-of-band upd
 
 ## Telemetry Dependencies
 
-Updates to telemetry libraries are deferred to bi-annual cycles unless a CVSS > 7.0 is flagged, strictly to prevent observability schema breakage.
+Telemetry libraries follow the standard quarterly update cadence, but require explicit schema-validation passing prior to merge.
