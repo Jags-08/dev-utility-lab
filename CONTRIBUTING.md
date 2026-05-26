@@ -38,4 +38,4 @@ pytest tests/
 Thank you for your contributions!
 
 ## Passive Stewardship Notice
-This repository is in a passive stewardship phase. Feature requests and expansive architectural PRs will be automatically closed to preserve ecosystem stability.
+This repository is in a passive stewardship phase. Feature requests are suspended. Only operational bug fixes and security patches will be reviewed.
