@@ -11,3 +11,4 @@ To ensure passive sustainment operations remain aligned with constitutional quor
 
 *Drafted for low-velocity governance phases.*
 - [ ] Ensure 'Co-authored-by' trailer usage aligns with our collaborative review metrics for major governance updates.
+- [ ] **Review Council Distribution:** Verify that no single reviewer performed over 50% of the quarter's validations to prevent bottlenecking.
