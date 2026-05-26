@@ -10,3 +10,4 @@ To ensure passive sustainment operations remain aligned with constitutional quor
 - [ ] Confirm succession matrices for inactive stewardship leads.
 
 *Drafted for low-velocity governance phases.*
+- [ ] Ensure 'Co-authored-by' trailer usage aligns with our collaborative review metrics for major governance updates.
