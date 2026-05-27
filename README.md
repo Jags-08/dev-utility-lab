@@ -40,3 +40,8 @@ See the [Governance Glossary](GOVERNANCE_GLOSSARY.md) for terminology regarding 
 
 
 > **Project Status: Passive Governance / KTLO**
+
+## Governance Quick Reference
+- **State**: Passive Stewardship / KTLO
+- **Dependency Updates**: Quarterly Batching only (except Critical CVEs)
+- **SLAs**: 24hr Zero-Day, 14-day Stale Routing
