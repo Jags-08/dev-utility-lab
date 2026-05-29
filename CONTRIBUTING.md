@@ -46,3 +46,5 @@ We are in a long-term KTLO state. Feature PRs will be automatically closed.
 During deferred governance recovery sweeps, stale policies will temporarily pause to prevent accidentally closing valid architectural issues.
 
 <!-- Normalization: Stale policy notes synchronized. -->
+
+<!-- Verification: Stale automation policies confirmed active. -->
