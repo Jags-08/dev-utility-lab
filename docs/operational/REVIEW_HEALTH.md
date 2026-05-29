@@ -7,3 +7,5 @@ Qualitative metrics for monitoring @ReviewCouncil fatigue during passive operati
 
 ## Post-Dormancy Fatigue Mitigation
 Catch-up cycles must not exceed 20 PR merges per maintainer per week to prevent acute burnout during backlog reconciliation.
+
+<!-- Normalization: Metrics thresholds stabilized post-reconciliation. -->
