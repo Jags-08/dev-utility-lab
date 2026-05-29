@@ -9,3 +9,6 @@ No active feature development is sanctioned. This project operates strictly for 
 
 ## Telemetry Silence
 All weekly summary workflows are actively muted. Only CRITICAL exception webhooks remain active.
+
+## Missed Cadence Protocol
+Missing a maintenance window is acceptable under KTLO, provided no critical CVEs were ignored. The subsequent sweep must prioritize SLA backlog reduction.
