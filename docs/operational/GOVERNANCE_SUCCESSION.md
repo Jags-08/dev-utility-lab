@@ -10,3 +10,6 @@ During passive stewardship, maintainer presence is extremely limited.
 
 ## Succession Drill
 Mandatory dry-runs of Shamir key reconstruction are required once a year to prevent key-rot.
+
+## Council Rotation Sync
+If a rotation window is missed, the acting Continuity Coordinator maintains privileges until the deferred reconciliation phase is closed.
