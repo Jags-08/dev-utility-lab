@@ -41,3 +41,6 @@ Thank you for your contributions!
 This repository is in a passive stewardship phase. Feature requests are suspended. Only operational bug fixes and security patches will be reviewed.
 ## Passive State Notice
 We are in a long-term KTLO state. Feature PRs will be automatically closed.
+
+## Catch-Up Cycle Processing
+During deferred governance recovery sweeps, stale policies will temporarily pause to prevent accidentally closing valid architectural issues.
