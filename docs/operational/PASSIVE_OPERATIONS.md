@@ -14,3 +14,5 @@ All weekly summary workflows are actively muted. Only CRITICAL exception webhook
 Missing a maintenance window is acceptable under KTLO, provided no critical CVEs were ignored. The subsequent sweep must prioritize SLA backlog reduction.
 
 <!-- Polish: Ensured readability for external compliance auditors scanning KTLO status. -->
+
+<!-- Verification: Continuity baseline confirmed stable. -->
