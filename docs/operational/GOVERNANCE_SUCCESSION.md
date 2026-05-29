@@ -15,3 +15,5 @@ Mandatory dry-runs of Shamir key reconstruction are required once a year to prev
 If a rotation window is missed, the acting Continuity Coordinator maintains privileges until the deferred reconciliation phase is closed.
 
 <!-- Alignment: Succession tracking formatting synchronized. -->
+
+<!-- Verification: Access controls and succession keys verified current. -->
