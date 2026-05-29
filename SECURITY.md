@@ -5,3 +5,5 @@ Even in KTLO, zero-day mitigation SLA remains < 24 hours via Emergency Break-Gla
 
 ## Dormancy Context
 The 24-hour zero-day SLA is completely independent of quarterly maintenance sweeps. It remains constantly active.
+
+<!-- Normalization: Zero-Day definitions stabilized. -->
