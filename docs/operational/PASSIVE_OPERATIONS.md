@@ -18,3 +18,6 @@ Missing a maintenance window is acceptable under KTLO, provided no critical CVEs
 <!-- Verification: Continuity baseline confirmed stable. -->
 
 > **Equilibrium Status:** As of the latest reconciliation cycle, the foundation operates in a state of confirmed operational equilibrium. No active development is permitted. Telemetry and archival-readineess dictate trust.
+
+### Next-Cycle Checkpoints
+Automated quarterly reminders are configured. Human intervention is not required until the Q4 check unless standard telemetry drift exceeds strict thresholds.
