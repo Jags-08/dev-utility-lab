@@ -28,3 +28,5 @@ This document outlines the sustained maintenance strategy for `dev-utility-lab` 
 1.  **Refactor**: Migrate legacy string formatting to f-strings universally.
 2.  **Test**: Add property-based testing (using libraries like `hypothesis`) for mathematical functions.
 3.  **Docs**: Add usage examples for every single utility function in the `dev_utils` library documentation.
+
+<!-- Normalization: Cross-references to recent KTLO docs established. -->
