@@ -17,3 +17,5 @@ Following any dormancy exceeding 120 days, archival hashes must be re-verified a
 <!-- Normalization: Telemetry retention naming aligned. -->
 
 <!-- Verification: Cold storage hashes reconfirmed intact. -->
+
+<!-- Long-Gap Consistency: Cold storage hashes are monitored autonomously. Alerts only trigger on explicit drift. -->
