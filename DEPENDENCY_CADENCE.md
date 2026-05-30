@@ -11,3 +11,5 @@ In the event a quarterly dependency sweep is missed due to strict passive dorman
 <!-- Normalization: Cadence definitions have been synchronized with the latest Q3 standards. -->
 
 <!-- Verification: Dependency lockdown criteria verified for current passive phase. -->
+
+<!-- Passive Note: Zero-CVE threshold is maintained via automated daily scans. No manual sweeps needed until Q4. -->
