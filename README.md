@@ -1,5 +1,6 @@
 ﻿# 🛡️ DEV-UTILITY-LAB: CHAOS ENGINEERING & RECOVERY VALIDATION
 
+
 ![Ecosystem Status](https://img.shields.io/badge/Ecosystem-Passive_Sustainment-blue.svg)
 ![Resilience](https://img.shields.io/badge/Resilience-Chaos_Tested-orange.svg)
 ![Survivability](https://img.shields.io/badge/Survivability-Validated-success.svg)
