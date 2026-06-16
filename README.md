@@ -47,4 +47,4 @@ See the [Governance Glossary](GOVERNANCE_GLOSSARY.md) for terminology regarding 
 - **Dependency Updates**: Quarterly Batching only (except Critical CVEs)
 - **SLAs**: 24hr Zero-Day, 14-day Stale Routing
 
-> *Note: Repository recently underwent a deferred cadence reconciliation pass to maintain KTLO stability.*
+> *Note: Repository recently underwent a deferred cadence reconciliation pass to maintain KTLO stability*
